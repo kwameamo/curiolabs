@@ -3,23 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CurioLabs - Tech & Creative Solutions</title>    
+  <title>CurioLabs - Tech & Creative Solutions</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-content">
+      <div class="loader-logo">Curio<span>Labs</span></div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+  
+  <!-- Page Transition -->
+  <div class="page-transition"></div>
+  
   <!-- Header -->
   <header>
     <div class="container">
       <nav class="navbar">
-        <a href="#" class="logo">Curio<span>Labs</span></a>
+        <a href="index.html" class="logo">Curio<span>Labs</span></a>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="cta-button">Get Started</a></li>
         </ul>
         <button class="menu-btn">
           <i class="fas fa-bars"></i>
@@ -30,23 +46,50 @@
 
   <!-- Hero Section -->
   <section class="hero" id="home">
+    <div class="geometric-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
     <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">Tech + Creativity Delivered</h1>
-        <p class="hero-subtitle">Your all-in-one partner for seamless, end-to-end tech solutions tailored to your unique needs.</p>
-        <div>
-          <a href="#contact" class="btn">Get Started</a>
-          <a href="#services" class="btn btn-outline" style="margin-left: 1rem;">Our Services</a>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">Tech Solutions <span>With Creativity</span></h1>
+          <p class="hero-subtitle">Your all-in-one partner for seamless, end-to-end technology and creative solutions tailored to your unique needs.</p>
+          <div class="hero-buttons">
+            <a href="contact.html" class="btn">Start Your Project</a>
+            <a href="services.html" class="btn btn-outline">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="/api/placeholder/600/500" alt="CurioLabs Hero Image">
+          <div class="tech-icon icon-1">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="tech-icon icon-2">
+            <i class="fas fa-cog"></i>
+          </div>
+          <div class="tech-icon icon-3">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="tech-icon icon-4">
+            <i class="fas fa-network-wired"></i>
+          </div>
         </div>
       </div>
     </div>
+    <a href="#services" class="scroll-down">
+      <span>Scroll Down</span>
+      <div class="mouse"></div>
+    </a>
   </section>
 
-  <!-- Services Section -->
+  <!-- Services Preview Section -->
   <section class="section" id="services">
     <div class="container">
       <h2 class="section-title text-center">Our Services</h2>
-      <p class="text-center mb-3">Comprehensive tech solutions to power your business and creative needs.</p>
+      <p class="text-center mb-5">Comprehensive tech solutions to power your business and creative needs.</p>
       
       <div class="services-grid">
         <!-- Service 1 -->
@@ -56,242 +99,252 @@
           </div>
           <div class="service-content">
             <h3 class="service-title">Web & Digital Services</h3>
-            <p class="service-description">From custom website design to data visualization, we deliver digital solutions that make an impact.</p>
-            <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-              <li>Custom Website Design & Development</li>
-              <li>Custom & Private Email Solutions</li>
+            <p class="service-description">Transform your online presence with our comprehensive digital solutions.</p>
+            <ul class="service-list">
+              <li>Custom Website Design</li>
+              <li>Private Email Solutions</li>
               <li>Technical Writing</li>
-              <li>Data Analysis & Visualization</li>
+              <li>Data Visualization</li>
             </ul>
-            <a href="#contact" class="btn btn-outline">Learn More</a>
+            <a href="services.html" class="btn btn-outline">Learn More</a>
           </div>
         </div>
         
         <!-- Service 2 -->
         <div class="service-card">
-          <div class="service-icon" style="background-color: var(--secondary);">
+          <div class="service-icon">
             <i class="fas fa-tools"></i>
           </div>
           <div class="service-content">
             <h3 class="service-title">IT Support & Maintenance</h3>
-            <p class="service-description">Keep your tech running smoothly with our comprehensive maintenance and repair services.</p>
-            <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-              <li>General IT Support & Troubleshooting</li>
-              <li>Hardware & PC Maintenance</li>
-              <li>OS Installations & Upgrades</li>
-              <li>Hardware Diagnostics & Repairs</li>
+            <p class="service-description">Keep your tech running smoothly with our expert support services.</p>
+            <ul class="service-list">
+              <li>IT Troubleshooting</li>
+              <li>Hardware Maintenance</li>
+              <li>OS Installations</li>
+              <li>Hardware Repairs</li>
             </ul>
-            <a href="#contact" class="btn btn-outline">Learn More</a>
+            <a href="services.html" class="btn btn-outline">Learn More</a>
           </div>
         </div>
         
         <!-- Service 3 -->
         <div class="service-card">
-          <div class="service-icon" style="background-color: var(--accent);">
+          <div class="service-icon">
             <i class="fas fa-network-wired"></i>
           </div>
           <div class="service-content">
             <h3 class="service-title">Network & Infrastructure</h3>
-            <p class="service-description">Build robust, secure networks and infrastructure for your home or business.</p>
-            <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-              <li>Home & Office Networking Solutions</li>
-              <li>Network Troubleshooting & Setup</li>
-              <li>Infrastructure Design & Implementation</li>
-              <li>Wireless Network Optimization</li>
+            <p class="service-description">Build robust, secure networks for your home or business.</p>
+            <ul class="service-list">
+              <li>Network Design</li>
+              <li>Troubleshooting</li>
+              <li>Wireless Optimization</li>
+              <li>Security Implementation</li>
             </ul>
-            <a href="#contact" class="btn btn-outline">Learn More</a>
+            <a href="services.html" class="btn btn-outline">Learn More</a>
           </div>
         </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: 4rem;">
+        <a href="services.html" class="btn">View All Services</a>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="section" id="about" style="background-color: #f0f2f5;">
+  <!-- About Preview Section -->
+  <section class="section about-section">
+    <div class="about-pattern"></div>
     <div class="container">
       <div class="about-grid">
-        <div class="about-image">
-          <img src="/api/placeholder/600/600" alt="About CurioLabs">
+        <div class="about-image-container">
+          <div class="about-image">
+            <img src="/api/placeholder/600/600" alt="About CurioLabs">
+          </div>
         </div>
         <div class="about-content">
-          <h2 class="section-title">About Us</h2>
-          <p class="mb-2">At CurioLabs, we're a dynamic team of professionals with diverse expertise, united by one mission: to deliver reliable, high-quality digital and technical solutions tailored to your needs.</p>
-          <p class="mb-2">Whether you're a small business, startup, or individual, CurioLabs is your go-to partner for seamless, end-to-end tech solutions that help you succeed in today's digital landscape.</p>
+          <h2 class="section-title">Who We Are</h2>
+          <p class="about-description">At CurioLabs, we're a dynamic team of professionals with diverse expertise, united by one mission: to deliver reliable, high-quality digital and technical solutions tailored to your needs.</p>
+          <p class="about-description">Whether you're a small business, startup, or individual, CurioLabs is your go-to partner for seamless, end-to-end tech solutions.</p>
           
-          <div class="value-points">
-            <div class="value-point">
+          <div class="value-grid">
+            <div class="value-card">
               <div class="value-icon">
                 <i class="fas fa-check"></i>
               </div>
-              <div>
-                <h4>Expertise</h4>
-                <p>Technical knowledge across multiple domains</p>
-              </div>
+              <h4 class="value-title">Expertise</h4>
+              <p class="value-text">Technical knowledge across multiple domains</p>
             </div>
-            <div class="value-point">
+            <div class="value-card">
               <div class="value-icon">
                 <i class="fas fa-rocket"></i>
               </div>
-              <div>
-                <h4>Innovation</h4>
-                <p>Creative solutions to complex problems</p>
-              </div>
-            </div>
-            <div class="value-point">
-              <div class="value-icon">
-                <i class="fas fa-handshake"></i>
-              </div>
-              <div>
-                <h4>Reliability</h4>
-                <p>Consistent quality and timely delivery</p>
-              </div>
-            </div>
-            <div class="value-point">
-              <div class="value-icon">
-                <i class="fas fa-users"></i>
-              </div>
-              <div>
-                <h4>Client Focus</h4>
-                <p>Your needs guide our approach</p>
-              </div>
+              <h4 class="value-title">Innovation</h4>
+              <p class="value-text">Creative solutions to complex problems</p>
             </div>
           </div>
+          
+          <a href="about.html" class="btn" style="margin-top: 2rem;">Learn More About Us</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section class="section" id="portfolio">
+  <!-- Portfolio Preview Section -->
+  <section class="section portfolio-section">
+    <div class="portfolio-pattern"></div>
     <div class="container">
       <h2 class="section-title text-center">Our Work</h2>
-      <p class="text-center mb-3">Check out some of our recent projects and solutions.</p>
+      <p class="text-center mb-5">Check out some of our recent projects and solutions that helped our clients succeed.</p>
       
       <div class="portfolio-grid">
         <!-- Portfolio Item 1 -->
         <div class="portfolio-item">
-          <img src="/api/placeholder/600/600" alt="Project 1" class="portfolio-image">
+          <img src="/api/placeholder/600/600" alt="E-commerce Website" class="portfolio-image">
           <div class="portfolio-overlay">
             <h3 class="portfolio-title">E-commerce Website</h3>
             <p class="portfolio-category">Web Development</p>
           </div>
+          <a href="portfolio.html" class="portfolio-button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
         
         <!-- Portfolio Item 2 -->
         <div class="portfolio-item">
-          <img src="/api/placeholder/600/600" alt="Project 2" class="portfolio-image">
+          <img src="/api/placeholder/600/600" alt="Network Infrastructure" class="portfolio-image">
           <div class="portfolio-overlay">
             <h3 class="portfolio-title">Network Infrastructure</h3>
             <p class="portfolio-category">Networking Solutions</p>
           </div>
+          <a href="portfolio.html" class="portfolio-button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
         
         <!-- Portfolio Item 3 -->
         <div class="portfolio-item">
-          <img src="/api/placeholder/600/600" alt="Project 3" class="portfolio-image">
+          <img src="/api/placeholder/600/600" alt="Data Dashboard" class="portfolio-image">
           <div class="portfolio-overlay">
             <h3 class="portfolio-title">Data Dashboard</h3>
             <p class="portfolio-category">Data Visualization</p>
           </div>
+          <a href="portfolio.html" class="portfolio-button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
-        
-        <!-- Portfolio Item 4 -->
-        <div class="portfolio-item">
-          <img src="/api/placeholder/600/600" alt="Project 4" class="portfolio-image">
-          <div class="portfolio-overlay">
-            <h3 class="portfolio-title">Technical Documentation</h3>
-            <p class="portfolio-category">Technical Writing</p>
-          </div>
-        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: 4rem;">
+        <a href="portfolio.html" class="btn">View All Projects</a>
       </div>
     </div>
   </section>
 
   <!-- Testimonials Section -->
-  <section class="section" id="testimonials" style="background-color: #f0f2f5;">
+  <section class="section testimonials-section">
+    <div class="testimonials-pattern"></div>
     <div class="container">
       <h2 class="section-title text-center">What Our Clients Say</h2>
-      <p class="text-center mb-3">Hear from businesses and individuals who've worked with us.</p>
+      <p class="text-center mb-5">Don't just take our word for it - hear what our clients have to say about working with us.</p>
       
-      <div class="testimonials-slider">
-        <div class="testimonial">
-          <p class="testimonial-quote">CurioLabs transformed our outdated website into a modern, responsive platform that's dramatically improved our online presence. Their attention to detail and technical expertise were impressive.</p>
+      <div class="testimonials-container">
+        <div class="testimonial-card">
+          <p class="testimonial-quote">CurioLabs transformed our outdated website into a modern, responsive platform that's dramatically improved our online presence. Their attention to detail and technical expertise were impressive throughout the entire process.</p>
           <div class="testimonial-author">
             <div class="author-image">
-              <img src="/api/placeholder/100/100" alt="Client">
+              <img src="/api/placeholder/100/100" alt="Sarah Johnson">
             </div>
-            <div>
-              <h4 class="author-name">Sarah Johnson</h4>
-              <p class="author-title">Small Business Owner</p>
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <p>Small Business Owner</p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
+      <div class="text-center" style="margin-top: 3rem;">
+        <a href="contact.html" class="btn">Become Our Next Success Story</a>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="section" id="contact">
+  <!-- Contact Preview Section -->
+  <section class="section contact-section">
+    <div class="contact-pattern"></div>
     <div class="container">
-      <h2 class="section-title text-center">Get In Touch</h2>
-      <p class="text-center mb-3">Ready to start your project? Reach out to us today.</p>
-      
       <div class="contact-grid">
         <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
+          <h3 class="contact-heading">Get In Touch</h3>
+          <p class="contact-description">Ready to start your project or have questions? We'd love to hear from you. Reach out using any of the methods below.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4 class="contact-label">Find Us</h4>
+                <p class="contact-value">123 Tech Street, Innovation District</p>
+              </div>
             </div>
-            <div>
-              <h4>Find Us</h4>
-              <p>123 Tech Street, Innovation District</p>
+            
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4 class="contact-label">Call Us</h4>
+                <p class="contact-value">+1 (555) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4 class="contact-label">Email Us</h4>
+                <p class="contact-value">info@curiolabs.com</p>
+              </div>
             </div>
           </div>
           
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div>
-              <h4>Call Us</h4>
-              <p>+1 (555) 123-4567</p>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div>
-              <h4>Email Us</h4>
-              <p>info@curiolabs.com</p>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fab fa-whatsapp"></i>
-            </div>
-            <div>
-              <h4>WhatsApp</h4>
-              <p>+1 (555) 987-6543</p>
-            </div>
-          </div>
+          <a href="contact.html" class="btn" style="margin-top: 2rem;">Contact Us</a>
         </div>
         
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <input type="text" placeholder="Subject">
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent form-submit">Send Message</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
+    <div class="footer-pattern"></div>
     <div class="container">
       <div class="footer-grid">
         <div>
@@ -308,22 +361,22 @@
         <div>
           <h4 class="footer-heading">Services</h4>
           <ul class="footer-links">
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Email Solutions</a></li>
-            <li><a href="#">IT Support</a></li>
-            <li><a href="#">Hardware Repairs</a></li>
-            <li><a href="#">Networking</a></li>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Email Solutions</a></li>
+            <li><a href="services.html">IT Support</a></li>
+            <li><a href="services.html">Hardware Repairs</a></li>
+            <li><a href="services.html">Networking</a></li>
           </ul>
         </div>
         
         <div>
           <h4 class="footer-heading">Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         
@@ -344,11 +397,115 @@
   </footer>
 
   <script>
-    // Simple toggle for mobile menu
-    document.querySelector('.menu-btn').addEventListener('click', function() {
-      document.querySelector('.nav-links').classList.toggle('active');
+    // Wait for page to load
+    window.addEventListener('load', function() {
+      // Remove loader
+      setTimeout(function() {
+        document.querySelector('.loader').classList.add('loaded');
+      }, 2000);
+      
+      // Initialize animations
+      initAnimations();
+      
+      // Initialize custom cursor
+      initCustomCursor();
+      
+      // Initialize scroll events
+      initScrollEvents();
+      
+      // Mobile menu toggle
+      document.querySelector('.menu-btn').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
+        this.querySelector('i').classList.toggle('fa-bars');
+        this.querySelector('i').classList.toggle('fa-times');
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 100,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      
+      // Page navigation with transitions
+      document.querySelectorAll('a:not([href^="#"])').forEach(link => {
+        link.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          
+          // Skip for external links or same page
+          if (href.startsWith('http') || href === window.location.href) {
+            return;
+          }
+          
+          e.preventDefault();
+          
+          const transition = document.querySelector('.page-transition');
+          transition.classList.add('active');
+          
+          setTimeout(function() {
+            window.location.href = href;
+          }, 700);
+        });
+      });
     });
     
-    // Smooth scrolling for anchors
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
+    // Initialize animations based on scroll position
+    function initAnimations() {
+      const animateElements = document.querySelectorAll('.service-card, .about-image, .about-content, .portfolio-item, .testimonial-card, .contact-info, .contact-form-container');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      animateElements.forEach(element => {
+        observer.observe(element);
+      });
+    }
+    
+    // Initialize custom cursor
+    function initCustomCursor() {
+      const cursor = document.querySelector('.custom-cursor');
+      
+      document.addEventListener('mousemove', function(e) {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+      });
+      
+      document.querySelectorAll('a, button, .service-card, .portfolio-item').forEach(item => {
+        item.addEventListener('mouseenter', function() {
+          cursor.classList.add('active');
+        });
+        
+        item.addEventListener('mouseleave', function() {
+          cursor.classList.remove('active');
+        });
+      });
+    }
+    
+    // Initialize scroll events
+    function initScrollEvents() {
+      window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
