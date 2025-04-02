@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CurioLabs - Tech & Creative Solutions</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="styles/contact.css"> 
+  <link rel="shortcut icon" href="images/2.png">
+  <link rel="apple-touch-icon" href="images/curio2.jpg" sizes="72x72">
+  <link rel="apple-touch-icon" href="images/curio2.jpg">
+  <link rel="apple-touch-icon-precomposed" href="images/curio2.jpg">
+  <script src="scripts.js"></script>
+  <script src="contact.js"></script>
+
+</head>
+  
+<body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+  
+  <!-- Page Transition -->
+  <div class="page-transition"></div>
+  
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <img class="logo" src="images/2.svg" alt="Logo" width="130">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html" class="cta-button">Get Started</a></li>
+        </ul>
+        <button class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <div class="page-header-content">
+      <h1 class="page-title animate-fade-in">Contact Us</h1>
+      <p class="page-subtitle animate-fade-in delay-1">Have a project in mind or need technical support? Get in touch with our team today.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Grid Section -->
+<section class="section contact-section">
+  <div class="contact-pattern"></div>
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info-col">
+        <div class="contact-info-card animate-slide-up">
+          <h2 class="contact-heading">Get In Touch</h2>
+          <p class="contact-description">Ready to start your project or have questions? We'd love to hear from you. Reach out using any of the methods below or fill out the form.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4 class="contact-label">Find Us</h4>
+                <p class="contact-value">123 Tech Street, Innovation District</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4 class="contact-label">Call Us</h4>
+                <p class="contact-value">+1 (555) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4 class="contact-label">Email Us</h4>
+                <p class="contact-value">info@curiolabs.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div>
+                <h4 class="contact-label">WhatsApp</h4>
+                <p class="contact-value">+1 (555) 987-6543</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="business-hours">
+            <h4 class="hours-heading">Business Hours</h4>
+            <div class="hours-grid">
+              <div class="hours-day">Monday - Friday:</div>
+              <div class="hours-time">9:00 AM - 6:00 PM</div>
+              <div class="hours-day">Saturday:</div>
+              <div class="hours-time">10:00 AM - 4:00 PM</div>
+              <div class="hours-day">Sunday:</div>
+              <div class="hours-time">Closed</div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <h4 class="social-heading">Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form-col">
+        <div class="contact-form-container animate-slide-up delay-2">
+          <h3 class="form-title">Send Us a Message</h3>
+          <p class="form-subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
+          
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Your email address" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone (Optional)</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="Your phone number">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" class="form-control" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="Web Development">Web Development</option>
+                <option value="IT Support">IT Support</option>
+                <option value="Networking">Networking</option>
+                <option value="Data Analysis">Data Analysis</option>
+                <option value="Technical Writing">Technical Writing</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Tell us about your project or inquiry" rows="5" required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label class="checkbox-container">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <span class="checkmark"></span>
+                Subscribe to our newsletter
+              </label>
+            </div>
+            
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary form-submit">
+                <span class="button-text">Send Message</span>
+                <span class="button-icon"><i class="fas fa-paper-plane"></i></span>
+              </button>
+            </div>
+            
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section">
+  <div class="container">
+    <h2 class="section-title text-center">Find Us</h2>
+    <p class="text-center mb-3" style="color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Visit our office for an in-person consultation or drop off your hardware for repair.</p>
+    
+    <div class="map-container animate-slide-up">
+      <!-- Replace the iframe with your actual Google Maps embed code -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319881956!2d-0.3817879966089474!3d5.5911868007945895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0xbed14ed8650e2dd3!2sAccra%20Metropolitan%20District%2C%20Ghana!5e0!3m2!1sen!2sus!4v1711139402000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+  <div class="cta-content">
+    <h2 class="cta-title">Ready to Transform Your Tech Experience?</h2>
+    <p class="cta-text">Let us help you with your next project or solve your technical challenges. Our team is ready to provide the solutions you need.</p>
+    <div class="cta-buttons">
+      <a href="services.html" class="cta-btn">Explore Services</a>
+      <a href="portfolio.html" class="cta-btn secondary">View Our Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- Success Modal -->
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-body">
+      <div class="success-icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <h3>Message Sent Successfully!</h3>
+      <p>Thank you for contacting CurioLabs. We've received your message and will get back to you shortly.</p>
+      <button class="btn btn-primary modal-btn">Great!</button>
+    </div>
+  </div>
+</div>
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-pattern"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-logo">Curio<span>Labs</span></h3>
+          <p class="footer-about">Your all-in-one tech and creative solutions partner. We provide reliable, high-quality digital and technical solutions tailored to your needs.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Email Solutions</a></li>
+            <li><a href="services.html">IT Support</a></li>
+            <li><a href="services.html">Hardware Repairs</a></li>
+            <li><a href="services.html">Networking</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Business Hours</h4>
+          <ul class="footer-links">
+            <li>Monday - Friday: 9am - 6pm</li>
+            <li>Saturday: 10am - 4pm</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 CurioLabs. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
