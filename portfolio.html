@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CurioLabs - Tech & Creative Solutions</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="styles/contact.css"> 
+  <link rel="shortcut icon" href="images/2.png">
+  <link rel="apple-touch-icon" href="images/curio2.jpg" sizes="72x72">
+  <link rel="apple-touch-icon" href="images/curio2.jpg">
+  <link rel="apple-touch-icon-precomposed" href="images/curio2.jpg">
+  <script src="scripts.js"></script>
+  <script src="contact.js"></script>
+
+</head>
+  
+<body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+  
+  <!-- Page Transition -->
+  <div class="page-transition"></div>
+  
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <img class="logo" src="images/2.svg" alt="Logo" width="130">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="cta-button">Get Started</a></li>
+        </ul>
+        <button class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <div class="page-header-content">
+      <h1 class="page-title animate-fade-in">Our Portfolio</h1>
+      <p class="page-subtitle animate-fade-in delay-1">Explore our latest projects and see how we've helped clients achieve their technology goals.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Filter -->
+<section class="portfolio-filter-section">
+  <div class="container">
+    <div class="portfolio-filter">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="it">IT Support</button>
+      <button class="filter-btn" data-filter="network">Networking</button>
+      <button class="filter-btn" data-filter="data">Data Analysis</button>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Grid -->
+<section class="portfolio-grid-section">
+  <div class="container">
+    <div class="portfolio-grid">
+      <!-- Web Development Projects -->
+      <div class="portfolio-item" data-category="web">
+        <div class="portfolio-image">
+          <img src="/api/placeholder/600/450" alt="E-commerce Website">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">E-commerce Website</h3>
+            <p class="portfolio-category">Web Development</p>
+            <a href="#portfolio-modal-1" class="portfolio-link">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio-item" data-category="web">
+        <div class="portfolio-image">
+          <img src="/api/placeholder/600/450" alt="Restaurant Website">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Restaurant Website</h3>
+            <p class="portfolio-category">Web Development</p>
+            <a href="#portfolio-modal-2" class="portfolio-link">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio-item" data-category="web">
+        <div class="portfolio-image">
+          <img src="/api/placeholder/600/450" alt="Educational Platform">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Educational Platform</h3>
+            <p class="portfolio-category">Web Development</p>
+            <a href="#portfolio-modal-3" class="portfolio-link">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- IT Support Projects -->
+      <div class="portfolio-item" data-category="it">
+        <div class="portfolio-image">
+          <img src="/api/placeholder/600/450" alt="Office IT Setup">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Office IT Setup</h3>
+            <p class="portfolio-category">IT Support</p>
+            <a href="#portfolio-modal-4" class="portfolio-link">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio-item" data-category="it">
+        <div class="portfolio-image">
+          <img src="/api/placeholder/600/450" alt="Hardware Upgrade">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Hardware Upgrade</h3>
+            <p class="portfolio-category">IT Support</p>
+            <a href="#portfolio-modal-5" class="portfolio-link">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Networking Projects -->
+      <div class="portfolio-item" data-category="network">
+        <div class="portfolio-image">
+          <img src="/api/placeholder/600/450" alt="Corporate Network Infrastructure">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Corporate Network</h3>
+            <p class="portfolio-category">Networking</p>
+            <a href="#portfolio-modal-6" class="portfolio-link">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio-item" data-category="network">
+        <div class="portfolio-image">
+          <img src="/api/placeholder/600/450" alt="Smart Home Networking">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Smart Home Networking</h3>
+            <p class="portfolio-category">Networking</p>
+            <a href="#portfolio-modal-7" class="portfolio-link">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Data Analysis Projects -->
+      <div class="portfolio-item" data-category="data">
+        <div class="portfolio-image">
+          <img src="/api/placeholder/600/450" alt="Sales Dashboard">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Sales Dashboard</h3>
+            <p class="portfolio-category">Data Analysis</p>
+            <a href="#portfolio-modal-8" class="portfolio-link">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio-item" data-category="data">
+        <div class="portfolio-image">
+          <img src="/api/placeholder/600/450" alt="Inventory Tracking System">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Inventory System</h3>
+            <p class="portfolio-category">Data Analysis</p>
+            <a href="#portfolio-modal-9" class="portfolio-link">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Client Testimonials -->
+<section class="testimonials-section">
+  <div class="container">
+    <h2 class="section-title text-center">Client Testimonials</h2>
+    <p class="text-center section-description">What our clients say about working with us.</p>
+    
+    <div class="testimonial-slider">
+      <div class="testimonial-slide active">
+        <div class="testimonial-content">
+          <div class="testimonial-quote">
+            <p>CurioLabs transformed our outdated website into a modern, responsive platform that's dramatically improved our online presence. Their attention to detail and technical expertise were impressive throughout the entire process.</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="/api/placeholder/100/100" alt="Sarah Johnson">
+            </div>
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <p>Small Business Owner</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-slide">
+        <div class="testimonial-content">
+          <div class="testimonial-quote">
+            <p>When our network infrastructure was struggling to keep up with our growing business, CurioLabs provided an elegant solution that not only solved our immediate issues but also gave us room to scale. Their team was professional, knowledgeable, and a pleasure to work with.</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="/api/placeholder/100/100" alt="Michael Thompson">
+            </div>
+            <div class="author-info">
+              <h4>Michael Thompson</h4>
+              <p>Operations Director</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-slide">
+        <div class="testimonial-content">
+          <div class="testimonial-quote">
+            <p>The data dashboard created by CurioLabs has completely changed how we understand our business metrics. We can now make data-driven decisions with confidence. Their team took the time to understand our specific needs and delivered beyond our expectations.</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="/api/placeholder/100/100" alt="Jennifer Williams">
+            </div>
+            <div class="author-info">
+              <h4>Jennifer Williams</h4>
+              <p>Marketing Manager</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-controls">
+        <button class="prev-btn" aria-label="Previous testimonial">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="testimonial-dots">
+          <button class="dot active" data-slide="0" aria-label="Testimonial 1"></button>
+          <button class="dot" data-slide="1" aria-label="Testimonial 2"></button>
+          <button class="dot" data-slide="2" aria-label="Testimonial 3"></button>
+        </div>
+        <button class="next-btn" aria-label="Next testimonial">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="stat-number" data-count="47">0</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="stat-number" data-count="29">0</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <div class="stat-number" data-count="5840">0</div>
+        <div class="stat-label">Hours of Work</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-coffee"></i>
+        </div>
+        <div class="stat-number" data-count="823">0</div>
+        <div class="stat-label">Cups of Coffee</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+  <div class="cta-content">
+    <h2 class="cta-title">Ready to Start Your Project?</h2>
+    <p class="cta-text">Let's talk about how we can help you achieve your technology goals.</p>
+    <a href="contact.html" class="cta-btn">Get in Touch</a>
+  </div>
+</section>
+
+<!-- Portfolio Modals -->
+<!-- Portfolio Modal 1 - E-commerce Website -->
+<div class="portfolio-modal" id="portfolio-modal-1">
+  <div class="modal-overlay"></div>
+  <div class="modal-container">
+    <button class="modal-close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="modal-content">
+      <h2 class="modal-title">E-commerce Website</h2>
+      <div class="modal-info">
+        <div class="modal-image">
+          <img src="/api/placeholder/800/600" alt="E-commerce Website">
+        </div>
+        <div class="modal-details">
+          <div class="modal-detail-item">
+            <h4>Client:</h4>
+            <p>Fashion Boutique</p>
+          </div>
+          <div class="modal-detail-item">
+            <h4>Project Date:</h4>
+            <p>January 2024</p>
+          </div>
+          <div class="modal-detail-item">
+            <h4>Services:</h4>
+            <p>Web Development, E-commerce, SEO</p>
+          </div>
+          <div class="modal-detail-item">
+            <h4>Project URL:</h4>
+            <p><a href="#" target="_blank">www.example-boutique.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-description">
+        <h3>Project Overview</h3>
+        <p>The client needed a modern, responsive e-commerce website that would showcase their fashion products effectively while providing a seamless shopping experience for their customers. They were transitioning from a brick-and-mortar-only model to an omnichannel approach and needed a strong online presence.</p>
+        
+        <h3>Challenge</h3>
+        <p>The main challenges included creating an intuitive product categorization system for hundreds of items, implementing secure payment processing, and ensuring the site loaded quickly despite high-quality product imagery.</p>
+        
+        <h3>Solution</h3>
+        <p>We designed and developed a custom e-commerce platform with:</p>
+        <ul>
+          <li>Responsive design optimized for all devices</li>
+          <li>Advanced filtering and search capabilities</li>
+          <li>Integrated secure payment gateway with multiple payment options</li>
+          <li>Image optimization for fast loading times</li>
+          <li>Inventory management system</li>
+          <li>Customer account portal with order history</li>
+        </ul>
+        
+        <h3>Results</h3>
+        <p>Since launching the new e-commerce website, the client has seen:</p>
+        <ul>
+          <li>35% increase in online sales</li>
+          <li>22% reduction in cart abandonment rate</li>
+          <li>48% increase in mobile conversions</li>
+          <li>Expanded customer base beyond local geography</li>
+        </ul>
+      </div>
+      <div class="modal-testimonial">
+        <p>"The CurioLabs team transformed our business with a beautiful, functional online store that perfectly represents our brand. Our customers love the easy shopping experience, and we've seen tremendous growth in our online sales."</p>
+        <p class="testimonial-author">- Linda Williams, Owner</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Additional modals would follow the same structure -->
+<!-- For brevity, I've only included the first modal, but in production, you would create one for each portfolio item -->
+
+<!-- Footer -->
+  <footer>
+    <div class="footer-pattern"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-logo">Curio<span>Labs</span></h3>
+          <p class="footer-about">Your all-in-one tech and creative solutions partner. We provide reliable, high-quality digital and technical solutions tailored to your needs.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Email Solutions</a></li>
+            <li><a href="services.html">IT Support</a></li>
+            <li><a href="services.html">Hardware Repairs</a></li>
+            <li><a href="services.html">Networking</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Business Hours</h4>
+          <ul class="footer-links">
+            <li>Monday - Friday: 9am - 6pm</li>
+            <li>Saturday: 10am - 4pm</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 CurioLabs. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
