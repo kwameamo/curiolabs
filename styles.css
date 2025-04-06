@@ -266,7 +266,7 @@
     .nav-links a {
       color: var(--dark);
       font-weight: 500;
-      padding: 0.5rem 0;
+      padding: 0.5rem 0.5rem;
       position: relative;
     }
     
