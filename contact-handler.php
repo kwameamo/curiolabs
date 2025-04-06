@@ -77,8 +77,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <td>" . htmlspecialchars($subject) . "</td>
                 </tr>
                 <tr>
-                    <td>Newsletter:</td>
-                    <td>" . $newsletter . "</td>
+                    <td>Newsletter Subscription:</td>
+                    <td>" . ($newsletter == 'Yes' ? 'Yes - Please add to mailing list' : 'No') . "</td>
                 </tr>
                 <tr>
                     <td>Date/Time:</td>
@@ -104,7 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ";
     
     // Email headers
-    $headers = "From: CurioLabs Website <noreply@curiolabs.com>\r\n";
+    $headers = "From: CurioLabs Website <noreply@curiolabs.dev>\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
@@ -135,3 +135,15 @@ function redirectWithError($errorMessage) {
     header("Location: $errorRedirect&message=$encodedError");
     exit;
 }
+
+// At the end, add JSON response for AJAX requests
+if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+    if (mail($recipientEmail, $emailSubject, $emailBody, $headers)) {
+      echo json_encode(['status' => 'success', 'message' => 'Email sent successfully']);
+    } else {
+      http_response_code(500);
+      echo json_encode(['status' => 'error', 'message' => 'Failed to send email']);
+    }
+    exit;
+  }
+  ?>
