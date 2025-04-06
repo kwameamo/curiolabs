@@ -1,8 +1,8 @@
 /* Global Styles */
     :root {
-      --primary: #2b59ff;
-      --primary-dark: #1e3eb3;
-      --secondary: #7000ff;
+      --primary: #007d68;         /* Base: Teal Green */
+      --primary-dark: #005b4e;    /* Darker shade of primary */
+      --secondary: #00c2a8;       /* Contrasting vibrant teal for accents */
       --accent: #ef6e1c;
       --light: #f8f9fa;
       --dark: #121212;
